@@ -1,0 +1,22 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      # `ray lint` also checks the author exists in the Raycast Store, which needs the store account: run its parts here
+      - run: npx eslint src
+      - run: npx prettier --check src
+      - run: npx ray build -e dist
