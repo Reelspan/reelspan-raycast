@@ -1,6 +1,6 @@
 # Reelspan for Raycast
 
-Publish to TikTok, YouTube, Instagram, Facebook, X, Threads, LinkedIn, Pinterest, Bluesky, Reddit and 12 more networks
+Publish to TikTok, YouTube, Instagram, Facebook, X, Threads, LinkedIn, Pinterest, Bluesky, Reddit and more
 from Raycast with [Reelspan](https://reelspan.com), and ask Raycast AI to do it for you.
 
 ## Commands

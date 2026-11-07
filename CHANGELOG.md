@@ -2,7 +2,7 @@
 
 ## [Initial Version] - {PR_MERGE_DATE}
 
-- Create Post: text, a video or photos (files or URLs) to any of 22 networks, now, scheduled or queued, with a first
+- Create Post: text, a video or photos (files or URLs) to any network you connect, now, scheduled or queued, with a first
   comment. Only the networks the chosen profile has connected are offered. Shows each network's result and link.
 - Post History: each network's result and link, filter by network, retry a failed network, load more as you scroll.
 - Scheduled Posts: see what is waiting and cancel with a confirmation.
