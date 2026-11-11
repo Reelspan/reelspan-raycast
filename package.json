@@ -4,7 +4,7 @@
   "title": "Reelspan",
   "description": "Publish videos, photos and text to TikTok, YouTube, Instagram, X, LinkedIn and more; check results, scheduled posts and history.",
   "icon": "extension-icon.png",
-  "author": "reelspan",
+  "author": "fabwaseem",
   "categories": [
     "Productivity",
     "Communication",
@@ -95,10 +95,31 @@
       {
         "input": "@reelspan post 'We shipped dark mode' to X and LinkedIn for acme",
         "mocks": {
-          "get-profiles": [{ "username": "acme", "name": "Acme", "networks": ["x", "linkedin"] }]
+          "get-profiles": [
+            {
+              "username": "acme",
+              "name": "Acme",
+              "networks": [
+                "x",
+                "linkedin"
+              ]
+            }
+          ]
         },
         "expected": [
-          { "callsTool": { "name": "create-post", "arguments": { "profile": "acme", "type": "text", "platforms": ["x", "linkedin"] } } }
+          {
+            "callsTool": {
+              "name": "create-post",
+              "arguments": {
+                "profile": "acme",
+                "type": "text",
+                "platforms": [
+                  "x",
+                  "linkedin"
+                ]
+              }
+            }
+          }
         ]
       }
     ]
@@ -122,7 +143,7 @@
   "dependencies": {
     "@raycast/api": "^2.11.1",
     "@raycast/utils": "^2.3.3",
-    "reelspan": "github:Reelspan/reelspan-node#cc5ceabe0aa3dd633b546f6a0a2132c4efded09f"
+    "reelspan": "^1.0.0"
   },
   "devDependencies": {
     "@raycast/eslint-config": "^2.2.0",
