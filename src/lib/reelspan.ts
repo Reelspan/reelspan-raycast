@@ -22,7 +22,6 @@ export const NETWORKS: { id: string; name: string }[] = [
   ["discord", "Discord"],
   ["slack", "Slack"],
   ["mastodon", "Mastodon"],
-  ["lemmy", "Lemmy"],
   ["devto", "Dev.to"],
   ["hashnode", "Hashnode"],
   ["wordpress", "WordPress"],
